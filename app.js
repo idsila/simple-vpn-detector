@@ -47,7 +47,7 @@ class VpnDetected{
     this.preload && (className = this.createBlock('WAIT PLEASE', 'Checking for VPN availability', 'wait'));
     
     const ip = async () => {
-      const language = await navigator.language.split('-')[1].toUpperCase();
+      const language = await navigator.language.split('-')[0].toUpperCase();
       const ipRawGeo = await fetch('https://ipinfo.io/geo');
       const ipGeo = await ipRawGeo.json();
       if(ipGeo.country != language){
