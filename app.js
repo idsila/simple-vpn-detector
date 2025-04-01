@@ -55,7 +55,7 @@ class VpnDetected{
       className ?? document.querySelector(`.${className.replace(' ', '.')}`).remove();
     }
     
-    if(localStorage.vpn_detected && this.type === 'heavy'){
+    if(localStorage.vpn_detected && this.type === 'enhanced'){
       this.hide();
     }
     else{
