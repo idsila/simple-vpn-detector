@@ -42,6 +42,7 @@ class VpnDetected{
   }
   
   run(){
+    
     let className = null;
     this.preload && (className = this.createBlock('WAIT PLEASE', 'Checking for VPN availability', 'wait'));
     
@@ -52,7 +53,7 @@ class VpnDetected{
       if(ipGeo.country != language){
         this.hide(ipGeo.country);
       }
-      className && document.querySelector(`.${className}`).remove();
+      className && document.querySelector(`.vpn_detected`).remove();
     }
     
     if(localStorage.vpn_detected && this.type === 'enhanced'){
