@@ -22,7 +22,7 @@ class VpnDetected{
     ${type == 'wait' ? shiled_svg : alert_svg }
     <div class="vpn_detected_title">${message}</div>
     <div class="vpn_detected_description">${description}</div>
-    <div class="vpn_detected_author">ANTY-VPN CODE BY idisila</div>`;
+    <div class="vpn_detected_author">ANTY-VPN CODE BY idsila</div>`;
     document.body.append(block);
     return function (){
       const bl = document.querySelector(`.${className}`);
