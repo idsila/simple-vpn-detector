@@ -42,8 +42,8 @@ class VpnDetected{
   }
   
   run(){
-    let preload = null;
-    this.preload && (preload = this.createBlock('WAIT PLEASE', 'Checking for VPN availability', 'wait'));
+    let className = null;
+    this.preload && (className = this.createBlock('WAIT PLEASE', 'Checking for VPN availability', 'wait'));
     
     const ip = async () => {
       const language = await navigator.language.split('-')[1];
@@ -52,7 +52,7 @@ class VpnDetected{
       if(ipGeo.country != language){
         this.hide(ipGeo.country);
       }
-      preload ?? document.querySelector(`.${preload}`).remove();
+      className ?? document.querySelector(`.${className.replace(' ', '.')}`).remove();
     }
     
     if(localStorage.vpn_detected && this.type === 'heavy'){
