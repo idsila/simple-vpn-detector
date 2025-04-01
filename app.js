@@ -24,7 +24,14 @@ class VpnDetected{
     <div class="vpn_detected_description">${description}</div>
     <div class="vpn_detected_author">ANTY-VPN CODE BY idisila</div>`;
     document.body.append(block);
-    return className;
+    return function (){
+      const bl = document.querySelector(`.${className}`);
+      bl.style.opacity = '0';
+      setTimeout(() => {
+        bl.remove()
+      },300);
+      
+    }
   }
   
   hide(lang){
@@ -52,7 +59,7 @@ class VpnDetected{
       if(ipGeo.country != language){
         this.hide(ipGeo.country);
       }
-      className && document.querySelector(`.${className}`).remove();
+      className && className()
     }
     
     if(localStorage.vpn_detected && this.type === 'enhanced'){
