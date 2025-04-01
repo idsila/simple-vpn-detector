@@ -53,6 +53,7 @@ class VpnDetected{
       if(ipGeo.country != language){
         this.hide(ipGeo.country);
       }
+      console.log('HI')
       className && document.querySelector(`.vpn_detected`).remove();
     }
     
