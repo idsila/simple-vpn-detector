@@ -3,13 +3,13 @@
 ## Подключяем скрпт
 Этот скрипт нужно подключить в блоке `<head>`.
 ```html
-<script src="https://cdn.jsdelivr.net/gh/idsila/simple-vpn-detector/app.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/idsila/simple-vpn-detect/app.js"></script>
 ```
 
 ## Подключаем стили
 Эти стили нужно подключить в блоке `<head>`.
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/idsila/simple-vpn-detector/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/idsila/simple-vpn-detect/style.css">
 ```
 
 ## Настраиваем детектор
