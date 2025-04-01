@@ -24,7 +24,6 @@ class VpnDetected{
     <div class="vpn_detected_description">${description}</div>
     <div class="vpn_detected_author">ANTY-VPN CODE BY idisila</div>`;
     document.body.append(block);
-
     return className;
   }
   
@@ -64,7 +63,3 @@ class VpnDetected{
     }
   }
 }
-
-
-const vpnDetected = new VpnDetected(true, );
-vpnDetected.run()
