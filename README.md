@@ -16,12 +16,12 @@
 Этот скрипт нужно подключить в блоке `<body>` ближе к концу.
 ```html
 <script>
-  const vpnDetected = new VpnDetected(true, 'average');
-  vpnDetected.run()
+  const vpnDetector = new VpnDetector(true, 'average');
+  vpnDetector.run()
 </script>
 ```
 
-### `VpnDetected(preload, type)`
+### `VpnDetector(preload, type)`
 
 `preload` - принимает значение, `true` или `false` и отвечает за окно проверки VPN.
 `type` - принимает значение, `simple` по умолчанию, `average` или `enhanced`. Отвечает за степень защиты.
